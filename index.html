@@ -12,138 +12,146 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
 
-font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
-background:#f4f4f4;
+    background:linear-gradient(180deg,#08141f,#0f2740,#0d4d4b);
 
-color:#333;
+    color:#f5f5f5;
 
-padding:25px;
+    padding:20px;
 
 }
 
 .container{
 
-max-width:900px;
+    max-width:430px;
 
-margin:auto;
+    margin:auto;
 
 }
 
 .banner{
 
-background:#222;
+    background:rgba(255,255,255,.08);
 
-color:white;
+    border:1px solid rgba(255,255,255,.15);
 
-padding:30px;
+    backdrop-filter:blur(8px);
 
-text-align:center;
+    border-radius:25px;
 
-border-radius:20px;
+    padding:25px;
 
-margin-bottom:40px;
+    text-align:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 0 20px rgba(0,200,255,.15);
 
 }
 
 .banner h1{
 
-font-size:35px;
+    font-size:32px;
 
-margin-bottom:10px;
+    margin-bottom:8px;
 
 }
 
 .banner p{
 
-font-size:18px;
+    font-size:16px;
 
-opacity:.8;
-
-}
-
-section{
-
-margin-bottom:45px;
+    color:#b8dfff;
 
 }
 
-.texto{
+.caixa{
 
-font-size:20px;
+    background:rgba(255,255,255,.08);
 
-line-height:1.8;
+    border:1px solid rgba(255,255,255,.15);
 
-text-align:justify;
+    backdrop-filter:blur(8px);
 
-}
+    border-radius:20px;
 
-.galeria{
+    padding:18px;
 
-display:flex;
+    margin:22px 0;
 
-gap:20px;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-margin-top:30px;
-
-margin-bottom:30px;
+    box-shadow:0 0 15px rgba(0,255,200,.08);
 
 }
 
-.galeria img{
+.caixa p{
 
-width:400px;
+    line-height:1.8;
 
-max-width:100%;
+    font-size:16px;
 
-border-radius:20px;
-
-box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    text-align:left;
 
 }
 
-.foto-unica{
+.foto{
 
-text-align:center;
+    text-align:center;
 
-margin-top:30px;
-
-margin-bottom:30px;
+    margin:20px 0;
 
 }
 
-.foto-unica img{
+.foto img{
 
-width:500px;
+    width:90%;
 
-max-width:100%;
+    border-radius:20px;
 
-border-radius:20px;
-
-box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
 
 }
 
 footer{
 
-margin-top:60px;
+    margin-top:30px;
 
-text-align:center;
+    text-align:center;
 
-font-size:14px;
+    color:#b5cde0;
 
-color:#666;
+    font-size:13px;
+
+    padding-bottom:20px;
+
+}
+
+@media (min-width:700px){
+
+.container{
+
+max-width:500px;
+
+}
+
+.banner h1{
+
+font-size:38px;
+
+}
+
+.caixa p{
+
+font-size:17px;
+
+}
 
 }
 
@@ -158,45 +166,52 @@ color:#666;
 <div class="banner">
 
 <h1>
-<!-- ESCREVA AQUI O TÍTULO -->
-FELIZ ANIVERSÁRIO!!!
+
+<!-- ESCREVA O TÍTULO AQUI -->
+
+Feliz Aniversário!!
+
 </h1>
 
 <p>
 
-<!-- ESCREVA O SUBTÍTULO AQUI -->
-com muito amor, pepe
+<!-- ESCREVA O SUBTÍTULO AQUI -->com amor, pepe
+
+</p>
+
+</div>
+<section>
+
+<div class="caixa">
+
+<p>
+
+<!-- ====================================================== -->
+
+<!-- ESCREVA O PRIMEIRO TEXTO AQUI -->Bom, primeiramente eu queria te dizer, parabéns! feliz 18 aninhos né? eu espero que você possa se tornar tudo o que sempre dizia querer ser.
+  Quero ver você realizando seus sonhos e superando quaisquer dificuldades que a vida pode nos proporcionar, porque ela bate, e bate forte na gente, mas eu desejo que você consiga seguir e não se abalar com isso.
+
+<!-- ====================================================== -->
+
 </p>
 
 </div>
 
-
-<section>
-
-<div class="texto">
-
-<!--
-====================================================
-ESCREVA O PRIMEIRO TEXTO AQUI
-====================================================
--->Bom, primeiramente eu queria te dizer, parabéns! feliz 18 aninhos né? eu espero que você possa se tornar tudo o que sempre dizia querer ser.
-  Quero ver você realizando seus sonhos e superando quaisquer dificuldades que a vida pode nos proporcionar, porque ela bate, e bate forte na gente, mas eu desejo que você consiga seguir e não se abalar com isso.
-
-</div>
-
 </section>
 
 
 
-<section>
-
-<div class="galeria">
+<section class="foto">
 
 <img src="k.jpeg" alt="k.jpeg">
 
-<img src="pk.jpeg" alt="pk.jpeg">
+</section>
 
-</div>
+
+
+<section class="foto">
+
+<img src="kp.jpeg" alt="kp.jpeg">
 
 </section>
 
@@ -204,44 +219,49 @@ ESCREVA O PRIMEIRO TEXTO AQUI
 
 <section>
 
-<div class="texto">
+<div class="caixa">
 
-<!--
-====================================================
-ESCREVA O SEGUNDO TEXTO AQUI
-====================================================
--->Quero que você saiba que é uma pessoa linda, e não só de aparência, mas sim de quem você é, você é alguem incrível e a melhor amiga que qualquer um poderia desejar. Além de um senso de humor maravilhoso você é um apessoa gentil, doce e que se importa, e sempre anima quem está ao seu lado com suas brincadeiras e seu jeitinho único.
+<p>
+
+<!-- ====================================================== -->
+
+<!-- ESCREVA O SEGUNDO TEXTO AQUI -->Quero que você saiba que é uma pessoa linda, e não só de aparência, mas sim de quem você é, você é alguem incrível e a melhor amiga que qualquer um poderia desejar. Além de um senso de humor maravilhoso você é um apessoa gentil, doce e que se importa, e sempre anima quem está ao seu lado com suas brincadeiras e seu jeitinho único.
   Que você continue sempre assim, uma garota forte e divertida, que você possa ser tão feliz que por onde passar deixar um rastro de risadas e alegria. Eu desejo que você possa conquistar tudo o que quiser e independente de tudo aproveitar a vida e tudo que ela pode oferecer.
 
+
+<!-- ====================================================== -->
+
+</p>
+
 </div>
 
 </section>
 
 
 
-<section>
-
-<div class="foto-unica">
+<section class="foto">
 
 <img src="keyes.jpeg" alt="keyes.jpeg">
 
-</div>
-
 </section>
 
 
 
 <section>
 
-<div class="texto">
+<div class="caixa">
 
-<!--
-====================================================
-ESCREVA O ÚLTIMO TEXTO AQUI
-====================================================
--->E pra finalizar eu só queria te dizer que, eu desejo que você possa ser feliz independente de tudo, mas ao mesmo tempo eu queria muito também te fazer feliz e poder fazer parte da sua vida, porque apesar de tudo, eu te amo e me importo demais com você.
+<p>
+
+<!-- ====================================================== -->
+
+<!-- ESCREVA O ÚLTIMO TEXTO AQUI -->E pra finalizar eu só queria te dizer que, eu desejo que você possa ser feliz independente de tudo, mas ao mesmo tempo eu queria muito também te fazer feliz e poder fazer parte da sua vida, porque apesar de tudo, eu te amo e me importo demais com você.
   mas é isso, aproveite bem, mesmo que você esteja vendo isso antes de seu aniversário, aproveite o agora, não no seu dia, aproveite todos os dias porque eles também são seus, aproveite cada dia como se fosse o último e de novo kksdklk, eu desejo mesmo que você possa achar a felicidade em meio ao caos desse mundo.
-  eu te amo muito muito muito. com carinho, pepe.
+
+
+<!-- ====================================================== -->
+
+</p>
 
 </div>
 
@@ -251,7 +271,9 @@ ESCREVA O ÚLTIMO TEXTO AQUI
 
 <footer>
 
-<!-- OPCIONAL -->
+Eu te amo muito muito muito. com carinho, pepe.
+
+<!-- OPCIONAL: ESCREVA ALGUMA FRASE PEQUENA OU DEIXE APENAS O CORAÇÃO -->
 
 </footer>
 
